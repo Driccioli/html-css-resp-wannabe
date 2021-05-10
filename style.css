@@ -88,14 +88,45 @@ img {
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right, 
-  #why .row>.left,
-  #why .row>.central,
-  #why .row>.right{
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third{
   width: 100%;
-  float: left;
   }
 
    .row img {
     height:100px;
+  }
+}
+
+@media screen and (min-width:420px) {
+  .row{
+    width:100%;
+    margin-top:30px;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right, 
+  #steps .row>.left,
+  #steps .row>.central,
+  #why .row>.first,
+  #why .row>.second{
+    width: 50%;
+    float:left;
+  }
+
+  #why .row>.first hr{
+    margin-top: 40px;
+  }
+
+  #steps .row>.right,
+  #why .row>.third {
+    width:100%;
+    margin-top:30px;
+    float: left;
+  }
+
+   .row img {
+    height:120px;
   }
 }
